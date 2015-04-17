@@ -1,7 +1,9 @@
 # RexJSLibrary
 Custom Javascript libraries
 
-#JsonToUrlParam
+#JsonToUrlParam()
+- convert JSON to URL parameter
 
-convert JSON to URL parameter
+#string_to_json()
+- convert string to JSON 
 
