@@ -21,3 +21,21 @@ function string_to_json(s) {
  s[r[0]] = r[1]; return s;}, {}))
 }
 
+
+/*
+* Bruteforce strings to number
+* generate strings by number
+*/
+
+function RexbruteForce(n) {
+        var ordA = ' '.charCodeAt(0);
+        var ordZ = '~'.charCodeAt(0);
+        var len = ordZ - ordA + 1;
+      
+        var s = "";
+        while(n >= 0) {
+            s = String.fromCharCode(n % len + ordA) + s;
+            n = Math.floor(n / len) - 1;
+        }
+        return s;
+    }
