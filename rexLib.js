@@ -39,3 +39,16 @@ function RexbruteForce(n) {
         }
         return s;
     }
+/*
+* Reverse javascript object to array because objects dont have ordered property
+*/
+
+function reverseObject(obj){
+	keys = Object.getOwnPropertyNames(myObj);
+	array = [];
+	var rev = keys.reverse();
+	for (var i = rev.length - 1; i >= 0; i--) {
+		array.push(myObj[rev[i]]);
+	}
+	return array;
+}
